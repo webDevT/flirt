@@ -1,8 +1,296 @@
 @import "vars"
 @import "fonts"
 
+//start global style
+body
+    font-family: $main-font
+    font-size: 3.333vw
+.container-fluid 
+    width: 88.889vw
+    padding-left: 0 
+    padding-right: 0
+p 
+    font-family: $secondary-font
+    width: 77.778vw
+    margin-left: auto
+    margin-right: auto
+    font-family: $secondary-font
+.h2 
+    margin-top: 0 
+    margin-bottom: 4vw
+    font-weight: 800
+    font-size: 8.889vw
+    line-height: 110%
+    span 
+        color: $red
+.button 
+    background: $blue
+    width: 79.722vw
+    margin-left: auto 
+    margin-right: auto
+    height: 13.333vw
+    color: #fff 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    border-radius: 30vw
+    font-weight: 900 
+    text-transform: uppercase 
+    font-size: 3.333vw
+    text-decoration: none
+    img 
+        width: 5.556vw
+        height: 5.556vw
+        margin-left: 1.111vw
+.button:hover 
+    color: #fff
+.button--red 
+    background: $red
+//end global style
 
+//start header style
+.header 
+    padding-top: 6.944vw
+.header__menu
+    display: flex 
+    justify-content: flex-end
+.menu-row
+    width: 6.389vw
+    height: 0.556vw
+    background: $black
+    margin-bottom: 1.667vw
+    border-radius: 10vw
+.menu-row:last-child 
+    margin-bottom: 0
+.menu-row:first-child 
+    width: 3.333vw
+.menu-row:nth-child(2)
+    width: 5vw
+.menu-btn
+    display: flex 
+    flex-direction: column 
+    align-items: flex-end
+    cursor: pointer
+    position: relative
+    z-index: 9999
+.logo
+    img 
+        width: 15vw
+.menu
+    position: absolute
+    top: 0 
+    left: 0
+    background: #fff
+    padding-top: 22vw 
+    padding-bottom: 10vw
+    padding-left: 7vw 
+    padding-right: 7vw
+    width: 100vw
+    box-shadow: 0px 1vw 1vw rgba($black, 0.1)
+    display: none
+    z-index: 999
+    ul 
+        list-style: none
+        padding: 0
+    li 
+        margin-bottom: 4vw
+    a 
+        font-size: 5vw
+        color: $black 
+        text-decoration: none
+        font-weight: 700
 
+//end header style
+
+//start photo wrapper
+.photo-wrapper
+    height: 69.444vw
+    width: 100vw
+    position: relative
+    margin-top: -4.444vw
+.photo 
+    position: absolute
+    object-fit: cover
+    object-position: center
+.photo1
+    top: 12.778vw
+    left: -2.778vw
+    width: 21.111vw
+    height: 21.111vw
+    border-radius: 50%
+    box-shadow: 0 5.556vw 13.889vw 0 rgba(0, 0, 0, 0.10)
+.photo2 
+    top: 0 
+    right: 0
+    width: 77.778vw
+.photo3
+    top: 38.056vw
+    left: 9.722vw
+    width: 31.944vw
+    height: 31.944vw
+    border-radius: 50%
+    box-shadow: 0 5.556vw 13.889vw 0 rgba(0, 0, 0, 0.10)
+.photo4
+    right: 21.944vw
+    top: 41.111vw
+    width: 20.556vw
+    height: 20.556vw
+    border-radius: 50%
+    box-shadow: 0 5.556vw 13.889vw 0 rgba(0, 0, 0, 0.10)
+//end photo wrapper
+.main-screen
+    overflow: hidden
+    position: relative
+    .button 
+        box-shadow: 0 5.556vw 13.889vw 0 rgba(0, 0, 0, 0.10)
+.circle 
+    width: 76.667vw
+    height: 76.667vw
+    border-radius: 50%
+    border: 1px solid #F5F5F5
+    position: absolute
+    top: -9.444vw 
+    left: -24.444vw
+.circle2 
+    width: 56.944vw
+    height: 56.944vw
+    border-radius: 50%
+    border: 1px solid #F5F5F5
+    position: absolute
+    top: 32.500vw
+    right: -14.722vw
+.main-screen__content
+    text-align: center
+    padding-top: 8.333vw
+.red-title
+    font-size: 14.444vw
+    font-weight: 800
+    color: $red
+.black-title
+    font-size: 13.333vw
+    font-weight: 800
+    line-height: 1
+.main-screen
+    padding-bottom: 18.611vw
+    p 
+        margin-top: 3.889vw
+        margin-bottom: 6.944vw
+.slider-card
+    width: 98% 
+    height: 40.278vw
+    background: url('../img/slide.svg')
+    background-size: 100%
+    background-repeat: no-repeat
+    padding-left: 5.556vw
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    font-weight: 800
+    font-size: 5vw
+    line-height: 110%
+    position: relative
+    padding-right: 12.222vw
+    span 
+        color: $red
+.phone 
+    position: absolute 
+    bottom: 3.2vw
+    right: 10.833vw
+    width: 25.556vw
+.slider-img
+    width: 28.889vw
+.slick-dots
+    list-style: none 
+    padding: 0 
+    margin: 0
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-top: 2.778vw
+    margin-bottom: 5.556vw
+    li 
+        margin: 0 0.556vw
+    button
+        font-size: 0 
+        border: none 
+        outline: none 
+        width: 2.222vw
+        height: 2.222vw
+        border-radius: 50% 
+        padding: 0
+        background: #E6E8E9
+    .slick-active 
+        button 
+            background: $red
+.slider-section 
+    padding-bottom: 16.667vw
+    .button 
+        box-shadow: 0 5.556vw 13.889vw 0 rgba(0, 0, 0, 0.10)
+.item 
+    text-align: center
+    height: 66.111vw
+    display: flex 
+    align-items: center 
+    justify-content: center 
+    flex-direction: column
+    overflow: hidden
+    border: 0.417vw solid $red
+    border-top-left-radius: 35.556vw
+    border-bottom-left-radius: 35.556vw
+    border-right: none
+    margin-left: 5.556vw
+.item-content
+    margin-left: -5.556vw
+.image1
+    width: 100vw
+    margin-top: -22vw
+.item--reverse
+    margin-left: 5.556vw
+    border-top-right-radius: 35.556vw
+    border-bottom-right-radius: 35.556vw
+    border-top-left-radius: 0
+    border-bottom-left-radius: 0
+    margin-right: 5.556vw
+    margin-left: 0
+    border-left: none
+    border-right: 0.417vw solid $red
+.image2 
+    width: 94.444vw
+.image2-wrapper
+    display: flex 
+    justify-content: flex-end
+    margin-top: -20vw
+.item--no-border
+    border: none  
+.image3
+    margin-left: auto 
+    margin-right: auto
+    display: block
+    width: 78.611vw 
+    margin-top: 13vw
+.image4 
+    display: block 
+    margin-left: auto 
+    margin-right: auto
+    width: 100vw
+    margin-top: -17vw
+.item-row:last-child 
+    margin-top: 10vw
+.try-now
+    text-align: center
+    .button 
+        margin-top: 3vw
+    
+    .container-fluid
+        background: #F0F1F3
+        border-radius: 6.667vw
+        padding: 6.944vw 4.444vw
+.try-now__title
+    font-weight: 800
+    margin-bottom: 3vw
+    font-size: 13.333vw
+    span 
+        color: $red
 
 @import "media"
 
