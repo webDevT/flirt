@@ -276,10 +276,11 @@ p
     display: block 
     margin-left: auto 
     margin-right: auto
-    width: 100vw
-    margin-top: -17vw
+    width: 90vw
+    margin-top: -10vw
 .item-row:last-child 
     margin-top: 10vw
+    margin-bottom: 13.889vw
 .try-now
     text-align: center
     .button 
@@ -345,6 +346,52 @@ p
     width: 22.500vw
 .slider-img3
     width: 23.889vw
+
+
+.custom-select
+    position: relative
+    margin-right: 8vw
+.custom-select select
+    display: none
+.select-selected:after
+    position: absolute
+    content: ""
+    top: 50%
+    right: 1vw
+    transform: translateY(-50%)
+    width: 4vw 
+    height: 4vw 
+    background: url('../img/arrow.svg')
+    background-size: 100%
+    background-position: center  
+.select-selected.select-arrow-active:after
+    transform: translateY(-50%) rotate(-180deg)
+.select-items div,
+.select-selected
+    font-size: 5vw
+    font-weight: 700 
+    padding-left: 4vw
+    padding-top: 1vw 
+    padding-bottom: 1vw
+.select-selected
+    padding-right: 7vw
+    padding-top: 0 
+    padding-bottom: 0
+.select-items
+    position: absolute
+    background-color: #fff
+    top: 100%
+    left: 0
+    right: 0
+    z-index: 99
+    padding-bottom: 2vw
+    border-bottom-left-radius: 3vw
+    border-bottom-right-radius: 3vw
+    box-shadow: 0px 2vw 1vw rgba(#000, 0.1)
+    padding-top: 1vw
+.select-hide
+    display: none
+
 @import "media"
 
 
