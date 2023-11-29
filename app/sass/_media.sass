@@ -3,55 +3,346 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
 	/**/
+	.container-fluid
+		width: 84.722vw
+	.header
+		padding-top: 1.389vw
+		position: relative
+		z-index: 999
+		.container-fluid 
+			display: flex
+			align-items: center
+			justify-content: flex-end
+			flex-direction: row-reverse
+	.photo-wrapper
+		margin-top: 0
+	.logo
+		img 
+			width: 4.444vw
+	.menu-btn
+		display: none
+	.menu 
+		display: block
+		position: static
+		background: transparent
+		padding: 0
+		width: auto
+		box-shadow: none
+		ul 
+			display: flex 
+			align-items: center
+			padding: 0
+			margin: 0
+		a 
+			font-size: 1.250vw
+			display: block
+		li 
+			margin-bottom: 0
+			margin-left: 2.083vw
+	.select-items div,
+	.select-selected
+		font-size: 1.250vw
+		padding-left: 2vw
+		top: 0
+	.select-selected:after
+		width: 1vw 
+		height: 1vw
+	.select-selected
+		padding-right: 3vw
+	.header__menu
+		align-items: center
+	.custom-select
+		margin-right: 0
+		margin-left: 2.986vw
+	.select-items
+		padding-bottom: 0.5vw
+		border-radius: 1vw
+		padding-top: 0.5vw
+		box-shadow: 0px 0.5vw 0.5vw rgba(0,0,0,.1)
+	.photo-wrapper
+		width: 37.847vw
+		height: 36.181vw
+		position: relative
+	.main-screen-section
+		width: 100vw
+		display: flex
+		flex-direction: row-reverse
+		justify-content: space-between
+		align-items: center
+		padding-left: 7.778vw
+		padding-right: 7.778vw
+		padding-top: 3.194vw
+		
+	.photo1
+		width: 8.889vw
+		height: 8.889vw
+		top: 18.750vw
+		left: -1.736vw
+		box-shadow: 0 1.389vw 3.472vw 0 rgba(0,0,0,.1)
+	.photo2 
+		width: 37.847vw
+		top: 0
+		right: 0
+	.photo4
+		width: 8.681vw
+		height: 8.681vw
+		right: 13.889vw
+		top: 27.569vw
+		box-shadow: 0 1.389vw 3.472vw 0 rgba(0,0,0,.1)
+	.photo3
+		width: 6.181vw
+		height: 6.181vw
+		top: 18.958vw
+		left: 11.250vw
+		box-shadow: 0 1.389vw 3.472vw 0 rgba(0,0,0,.1)
+	.main-screen__content
+		width: 28vw
+		p 
+			width: 100%
+			margin-top: 2.500vw
+			margin-bottom: 3.333vw
+	.red-title 
+		font-size: 5.694vw
+		display: flex 
+		align-items: center
+		span 
+			font-size: 4.444vw
+			padding-left: 1.528vw
+	.black-title 
+		font-size: 4.444vw
+	.main-screen p
+		text-align: left
+	body 
+		font-size: 1.250vw
+	.circle,
+	.circle2
+		display: none
+	.main-screen__content
+		text-align: left
+		padding-top: 0
+	.button
+		width: 19.931vw
+		height: 3.889vw
+		font-size: 0.833vw
+		margin-left: 0
+		cursor: pointer
+		img 
+			width: 1.389vw
+			margin-left: 0.5vw
+	.how-to-start-content
+		.h2 
+			display: block
+	.main-screen
+		padding-bottom: 6.250vw
+	.slider-section
+		.container-fluid 
+			display: flex
+			flex-direction: row-reverse
+			justify-content: space-between
+	.h2 
+		font-size: 3.889vw
+	.slider-card
+		width: 26.736vw
+		height: 11.736vw
+		margin: 1.389vw 1.042vw
+		padding-left: 2.083vw
+		padding-right: 2.083vw
+	.slider-card__title
+		font-size: 1.667vw
+		line-height: 1.1
+	.slider__item
+		display: flex
+	.phone 
+		width: 7.708vw
+		height: 9.722vw
+		bottom: 0.3vw
+		right: 2.083vw
+	.slider-img,
+	.slider-img2,
+	.slider-img3
+		width: 8.333vw
+	.how-to-start-content
+		padding-top: 2vw
+	.main-screen .button
+		box-shadow: 0 1.389vw 3.472vw 0 rgba(0,0,0,.1)
+	.how-to-start-content
+		.button 
+			margin-top: 4.167vw
+			background: transparent 
+			border: 0.104vw solid $red
+			color: $red
+			width: 13.889vw
+		svg 
+			width: 1.389vw
+			height: 1.389vw
+			fill: $red
+	.item-row
+		display: flex 
+		flex-direction: row-reverse
+	.image1-wrapper
+		min-width: 48vw
+		margin-top: 0
+		height: auto
+	.image1-1
+		width: 24.097vw
+		height: 24.097vw
+		left: -3.611vw
+		top: 2.6vw
+		box-shadow: 0px 1.389vw 3.472vw rgba($black, 0.1)
+	.image1-2
+		width: 16.389vw
+		height: 16.389vw
+		box-shadow: 0px 1.389vw 3.472vw rgba($black, 0.1)
+		top: 0
+		left: -9vw
+	.image1-3
+		width: 18.125vw
+		height: 18.125vw
+		box-shadow: 0px 1.389vw 3.472vw rgba($black, 0.1)
+		top: 6vw
+		left: -13vw
+	.image1-logo
+		top: 12.5vw
+		left: 27vw
+		width: 3.889vw
+		height: 3.889vw
+	.slider-section
+		padding-bottom: 6.181vw
+	p 
+		width: 35.764vw
+	.item
+		height: 29.653vw
+		width: 63.681vw
+		margin-left: -6vw 
+		width: 133vw
+		border-width: 0.139vw
+	.h2 
+		margin-bottom: 0.778vw
+	.item-content
+		margin-left: 0
+	.image2
+		width: 52.431vw
+		position: absolute 
+		top: -10vw
+		right: -4vw
+	.item-row--reverse
+		flex-direction: row
+	.image1-wrapper
+		padding-bottom: 0
+	.item-row:nth-child(2)
+		margin-top: 9.028vw
+	.item-row
+		position: relative
+	.item--reverse
+		margin-right: 0
+		margin-left: 0
+		width: 63.5vw
+	.item--reverse
+		.item-content
+			margin-left: -6vw
+	.item--no-border
+		text-align: left
+	.image3
+		width: 50.069vw
+		margin-top: 0
+		height: 24.097vw
+	.item-row:nth-child(3)
+		margin-top: 15.417vw
+		padding-left: 7.708vw
+		padding-right: 7.778vw
+		p 
+			width: 27.361vw
+	.item-row:last-child
+		display: flex 
+		align-items: center
+	.image4-1,
+	.image4-3
+		width: 19.653vw
+		min-width: 19.653vw
+		height: 19.653vw
+	.image4-2
+		min-width: 15vw
+		height: auto
+		left: -5.5vw
+		top: -1vw
+	.image4-wrapper
+		overflow: hidden
+		min-width: 48vw
+		justify-content: space-between
+		padding-bottom: 0
+		margin-top: 0
+		padding-top: 3vw
+		padding-bottom: 3vw
+	.image4-1
+		left: -2.5vw
+		box-shadow: 0px 1.389vw 3.472vw rgba($black, 0.1)
+	.image4-3
+		left: -9vw
+		box-shadow: 0px 1.389vw 3.472vw rgba($black, 0.1)
+	.item-row:last-child
+		display: flex
+		align-items: center
+	.try-now
+		padding-top: 5.208vw
+		position: relative
+	.try-now__title
+		font-size: 4.444vw
+		margin-bottom: 1vw
+	.try-now .container-fluid
+		text-align: left
+		padding: 2.778vw 4.583vw
+		border-radius: 3.333vw
+		width: 71.806vw
+		margin-left: 7.708vw
+		p 
+			margin-left: 0
+	.try-now__img
+		display: block
+		position: absolute
+		right: 5vw
+		top: 3.8vw
+		width: 47vw
+	.footer__link
+		font-size: 1.4vw
+		display: block
+		margin-left: 0
+	.footer__menu
+		margin-bottom: 0 
+		display: flex
+	.footer__social
+		margin-top: 0 
+		margin-bottom: 0
+	.footer__social a
+		width: 3vw 
+		height: 3vw
+		margin-left: 0
+	.footer__adress
+		font-size: 1vw
+	.footer-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 3vw
+	.footer-menu-wrap
+		display: flex
+	.footer
+		padding-bottom: 3vw
+		margin-top: 10vw
+	.title-image
+		width: 6vw
+		top: -1vw
 
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
 
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
+
+
+
+		
+
+
 
 
 
