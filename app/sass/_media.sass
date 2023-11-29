@@ -115,7 +115,7 @@
 	.main-screen p
 		text-align: left
 	body 
-		font-size: 1.250vw
+		font-size: 1.5vw
 	.circle,
 	.circle2
 		display: none
@@ -123,14 +123,14 @@
 		text-align: left
 		padding-top: 0
 	.button
-		width: 19.931vw
+		width: 22vw
 		height: 3.889vw
-		font-size: 0.833vw
+		font-size: 1vw
 		margin-left: 0
 		cursor: pointer
 		img 
-			width: 1.389vw
-			margin-left: 0.5vw
+			width: 2vw
+			margin-left: 0.8vw
 	.how-to-start-content
 		.h2 
 			display: block
@@ -211,7 +211,7 @@
 	.slider-section
 		padding-bottom: 6.181vw
 	p 
-		width: 35.764vw
+		width: 40vw
 	.item
 		height: 29.653vw
 		width: 63.681vw
@@ -298,6 +298,7 @@
 		margin-left: 7.708vw
 		p 
 			margin-left: 0
+			width: 36vw
 	.try-now__img
 		display: block
 		position: absolute
@@ -333,6 +334,59 @@
 	.title-image
 		width: 6vw
 		top: -1vw
+	.main-screen-section 
+		margin-top: 9.028vw
+	.header 
+		position: fixed
+
+	.header.sticky
+		padding-bottom: 1vw
+		padding-top: 1vw
+		.container-fluid 
+			justify-content: space-between
+			display: flex
+			flex-direction: row-reverse
+		.logo
+			margin-top: 0
+			margin-left: 0
+			width: 4.444vw
+			img
+				width: 3.889vw
+		.header__menu
+			flex-direction: row-reverse
+			justify-content: space-between
+			top: 0
+			width: calc(100% - 4.444vw)
+		.button 
+			margin-left: 3vw
+			width: 15vw
+	.sub-menu-title
+		font-size: 1.25vw
+		margin-bottom: 0
+		img 
+			width: 1vw
+			margin-left: 0.5vw
+			top: 0
+	.sub-menu 
+		display: none !important
+	.sub-menu-wrapper
+		position: relative
+	.sub-menu 
+		position: absolute
+		background: #fff 
+		z-index: 999
+		min-width: 18vw
+		padding: 2vw
+		box-shadow: 0 1.389vw 3.472vw 0 rgba(0,0,0,.1)
+		border-radius: 1vw
+		a 
+			margin-bottom: 1vw
+		a:last-child 
+			margin-bottom: 0
+	.sub-menu-wrapper:hover 
+		.sub-menu 
+			display: block !important
+
 
 
 

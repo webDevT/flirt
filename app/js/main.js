@@ -2,8 +2,21 @@ $(function(){
 
     $('.menu-btn').click(function(){
         $('.menu').slideToggle();
+        $('.header').toggleClass("active");
+        $(this).toggleClass('active');
     })
+    
+    $('.menu a').click(function(){
+      $('.menu').slideUp();
+      $('.header').removeClass("active");
+      $(this).removeClass('active');
+  })
 
+  $('.sub-menu-title').click(function(){
+    $('.sub-menu').slideToggle();
+  })
+
+    
 
 });
 
@@ -87,3 +100,12 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1){
+  $('.header').addClass("sticky");
+  }
+  else{
+  $('.header').removeClass("sticky");
+  }
+  });

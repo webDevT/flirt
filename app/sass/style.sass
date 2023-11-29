@@ -79,7 +79,7 @@ p
     img 
         width: 15vw
 .menu
-    position: absolute
+    position: fixed
     top: 0 
     left: 0
     background: #fff
@@ -143,6 +143,7 @@ p
 .main-screen
     overflow: hidden
     position: relative
+
     .button 
         box-shadow: 0 5.556vw 13.889vw 0 rgba(0, 0, 0, 0.10)
 .circle 
@@ -377,7 +378,7 @@ p
     padding-top: 1vw 
     padding-bottom: 1vw
     position: relative
-    top: -1vw
+    top: 0vw
 .select-selected
     padding-right: 7vw
     padding-top: 0 
@@ -480,6 +481,96 @@ p
     width: 15vw 
     position: relative
     top: -2.2vw
+.header
+    transition: all .3s
+    .logo 
+        transition: all .3s
+        img 
+            transition: all .3s
+.header__menu 
+    transition: all 0.3s   
+    display: flex 
+    align-items: center
+.header 
+    position: fixed 
+    width: 100%
+    top: 0 
+    left: 0
+
+    .button 
+        display: none
+        width: 39vw
+        margin-left: 8vw 
+        margin-right: 0
+.header.sticky,
+.header.active
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    background: #fff
+    z-index: 9999
+    padding-top: 0vw 
+    padding-bottom: 2vw
+    box-shadow: 0px 5px 5px rgba($black, 0.1)
+    transition: all .3s
+    .logo 
+        transition: all .3s
+        margin-top: -10vw
+        position: relative
+        z-index: 999
+        img 
+            width: 13.3vw
+            transition: all .3
+    .custom-select
+        z-index: 9999
+        position: relative
+    .button 
+        display: flex
+        position: relative
+        z-index: 9999
+    .header__menu
+        position: relative
+        top: 3vw
+.menu-btn.active 
+    .menu-row
+        width: 6.389vw
+        transition: all .3s
+    .menu-row:first-child 
+        display: none
+    .menu-row:nth-child(2)
+        transform: rotate(45deg)
+        position: relative
+        top: 1vw
+    .menu-row:nth-child(3)
+        transform: rotate(-45deg)
+        position: relative
+        top: -1.2vw
+.main-screen-section
+    margin-top: 23vw
+.menu-row-wrapper
+    display: flex
+    align-items: center
+.sub-menu-title
+    font-size: 5vw
+    font-weight: 700
+    display: flex 
+    align-items: center
+    margin-bottom: 3vw
+    cursor: pointer
+    img 
+        width: 4vw
+        margin-left: 2vw
+        position: relative
+        top: 0.2vw
+.sub-menu
+    display: none
+    padding-left: 3vw
+    
+    a 
+        display: block
+        margin-bottom: 2vw
+        font-weight: 400
 @import "media"
 
 
