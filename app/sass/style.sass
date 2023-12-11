@@ -523,11 +523,11 @@ h3
     transition: all .3s
     .logo 
         transition: all .3s
-        margin-top: -10vw
+        // margin-top: -10vw
         position: relative
         z-index: 999
         img 
-            width: 13.3vw
+            // width: 13.3vw
             transition: all .3
     .custom-select
         z-index: 9999
@@ -690,7 +690,7 @@ h3
 .header.sticky .logo,
 .header.active .logo  
     margin-top: 0
-    left: 2vw
+
     
 .header.sticky .header__menu,
 .header.active .header__menu
@@ -698,7 +698,12 @@ h3
     padding-top: 0
 .header.sticky,
 .header.active
-    padding-top: 2vw
+   padding-top: 3.333vw
+   padding-bottom: 3.333vw
+.header.sticky,
+.header.active
+    .button 
+        margin-left: 0
 @import "media"
 
 
